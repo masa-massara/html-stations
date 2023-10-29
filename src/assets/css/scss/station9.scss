@@ -12,10 +12,18 @@
     margin-bottom: 10px;
   }
 
-  @media (320px <= width < 768px) {
-    display: none;
+  @media (320px < width <= 768px) {
+    
+    .card__description {
+      display: none;
+    }
+
+    .card__title{
+        font-size: 3px;
+    }
+
   }
-  @media (768px <= width < 1200px) {
+  @media (768px < width <= 1200px) {
     .card__title,
     .card__description {
       color: #282828;
@@ -26,15 +34,10 @@
     .card__title,
     .card__description {
       color: #282828;
-      font-size: 14px;
+      font-size: 16px;
     }
   }
 
-  .card__title,
-  .card__description {
-    color: #282828;
-    font-size: 14px;
-  }
   header,
   footer {
     background-color: #ffffff;
